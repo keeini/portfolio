@@ -18,7 +18,7 @@ export default function Layout() {
                 <ThemeToggle />
             </header>
             <main id="main-content" tabIndex={-1}><Outlet /></main>
-            <footer>Sean Kee's portfolio for a class assignment.</footer>
+            <footer>Sean Kee's Portfolio.</footer>
         </>
     );
 }
