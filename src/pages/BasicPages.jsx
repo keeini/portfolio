@@ -88,6 +88,11 @@ export function Contact() {
                 <li>Email: <a href="mailto:seankee8@gmail.com">seankee8@gmail.com</a></li>
                 <li><a href="https://www.linkedin.com/in/sean-kee-05032a177/">LinkedIn</a></li>
                 <li><a href="https://github.com/keeini">GitHub</a></li>
+                <li>
+                    <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Sean-Kee-Resume.pdf">
+                        Download resume (PDF)
+                    </a>
+                </li>
             </ul>
         </section>
     );
