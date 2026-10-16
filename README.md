@@ -1,16 +1,43 @@
-# React + Vite
+# Sean Kee Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A portfolio made for the Web Technologies course at Saint Louis University. The website presents my education, technical skills, professional experience, and selected projects.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Home page with a personal introduction
+- Experience page with education, skills, and work history
+- Three projects displayed using reusable cards with filtering
+- Individual project-detail pages
+- Helpful messages for unknown pages and project URLs
+- Contact links and a downloadable resume
+- Persistent light and dark themes
 
-## React Compiler
+## Projects Included
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Predicting Global Landslide Trends** — Machine learning and data visualization using NASA’s Global Landslide Catalog.
+2. **Multimodal Digital Graphics on Touchscreens** — Accessible Android applications using haptic feedback, text-to-speech, and AI-assisted graph interpretation.
+3. **Where’s Religion?** — Open-source contributions focused on improving website usability and layout.
 
-## Expanding the Oxlint configuration
+## Running Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Run these commands on your machine's terminal.
+
+```bash
+git clone https://github.com/keeini/portfolio.git
+cd portfolio
+npm ci
+npm run dev
+```
+Finally, open the URL listed in the terminal.
+
+## Persistent Theme Extension
+
+The Dark Theme toggle uses useState to track whether dark mode is selected, and its initial value comes from localStorage.
+
+A useEffect updates the page’s data-theme attribute and saves the selected theme whenever it changes. CSS rules use this attribute to apply dark colors.
+
+The toggle stays in the shared layout so it remains available across every page. The saved preference persists after navigation and refresh, but is specific to the browser and website address.
+
+## Links
+
+- **Live website:** https://keeini.github.io/portfolio/
